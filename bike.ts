@@ -24,4 +24,22 @@ class Hunter implements bike{
     }
 }
 
+class Person{
+    vechileobj:bike
+    constructor(vechile){
+        this.vechileobj=vechile
+    }
+    drive(){
+        this.vechileobj.drive()
+    }
+}
+
+var hunterobj=new Hunter("hunter")
+
+var personobj=new Person(hunterobj)
+personobj.drive()
+
+
+
+
 
